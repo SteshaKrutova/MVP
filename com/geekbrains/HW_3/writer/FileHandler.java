@@ -1,15 +1,15 @@
-package family_free.family.writer;
+package com.geekbrains.HW_3.writer;
 
 import java.io.*;
+import java.io.Writer;
 
-public class FileHandler implements Writer {
+public class FileHandler extends Writer {
     private String filePath;
 
     public void setPath(String filePath) {
         this.filePath = filePath;
     }
-
-    @Override //- зачем это тут, а главное для чего?
+    //- зачем это тут, а главное для чего?
     //почему на семенаре в аналогичном методе в аргументах было Serializable serializable?
     // я не очень понимаю как тут привязать этот интерфейс
     public void write(Serializable human){
@@ -20,8 +20,7 @@ public class FileHandler implements Writer {
             e.printStackTrace();
         }
     }
-
-    @Override //- зачем это тут, а главное для чего?
+    //- зачем это тут, а главное для чего?
     public Object read() {
         try(ObjectInputStream file = new ObjectInputStream(new FileInputStream("src/family_free/writer/people.bin"))) {
             Object human = (Object) file.readObject();
@@ -34,4 +33,18 @@ public class FileHandler implements Writer {
     }
 
 
+    @Override
+    public void write(char[] cbuf, int off, int len) throws IOException {
+
+    }
+
+    @Override
+    public void flush() throws IOException {
+
+    }
+
+    @Override
+    public void close() throws IOException {
+
+    }
 }

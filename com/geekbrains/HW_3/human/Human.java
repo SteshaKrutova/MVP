@@ -1,6 +1,6 @@
-package HW_3.human;
+package com.geekbrains.HW_3.human;
 
-import HW_3.FamilyTree.TreeNode;
+import com.geekbrains.HW_3.FamilyTree.TreeNode;
 
 import java.io.Serializable;
 import java.time.LocalDate;
@@ -20,7 +20,6 @@ public class Human implements Serializable, TreeNode<Human> {
     private Human father;
     private List<Human> children;
 
-//My
     public Human(String name, Gender gender, LocalDate birthday, LocalDate deathDate, Human mother, Human father) {
         this.name = name;
         this.id = idCounter;
@@ -40,6 +39,10 @@ public class Human implements Serializable, TreeNode<Human> {
 
     public Human (String name,Gender gender, LocalDate birthday,Human mother, Human father){
         this(name,gender,birthday,null,mother,father);
+    }
+
+    public Human() {
+
     }
 
     public void addParent(Human parent){
@@ -86,8 +89,6 @@ public class Human implements Serializable, TreeNode<Human> {
 
     // сетеры и гетеры
     public String getName() { return name; }
-
-
     public void setName(String name) { this.name = name;}
     public Gender getGender() {return gender;}
     public void setGender(Gender gender) {this.gender = gender;}
@@ -105,14 +106,20 @@ public class Human implements Serializable, TreeNode<Human> {
 
     @Override
     public void setId(long id) {
-
+        this.id = (int) id;
     }
 
     public long getId() {return id;}
-    public void setId(int id) {this.id = id;}
+
+ //   public void setId(int id) {this.id = id;}
 
     public void setBirthday(LocalDate birthday) {
         this.birthday = birthday;
+    }
+
+
+    public void setAge(int age){
+        this.birthday = LocalDate.now().plusYears(age);
     }
 
     public int getAge(){

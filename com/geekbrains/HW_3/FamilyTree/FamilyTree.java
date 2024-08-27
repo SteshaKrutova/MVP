@@ -1,9 +1,8 @@
-package family_free.family.FamilyTree;
+package com.geekbrains.HW_3.FamilyTree;
 
-import HW_3.FamilyTree.TreeNode;
-import HW_3.human.Human;
-import family_free.family.human.Sort.ComparatorByAge;
-import family_free.family.human.Sort.ComparatorByName;
+import com.geekbrains.HW_3.human.Human;
+import com.geekbrains.HW_3.human.Sort.ComparatorByAge;
+import com.geekbrains.HW_3.human.Sort.ComparatorByName;
 
 import java.io.Serializable;
 import java.util.ArrayList;

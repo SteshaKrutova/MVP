@@ -1,8 +1,8 @@
-package HW_3;
+package com.geekbrains.HW_3;
 
-import HW_3.human.Gender;
-import HW_3.human.Human;
-import family_free.family.FamilyTree.FamilyTree;
+import com.geekbrains.HW_3.human.Gender;
+import com.geekbrains.HW_3.human.Human;
+import com.geekbrains.HW_3.FamilyTree.FamilyTree;
 
 import java.time.LocalDate;
 
@@ -28,7 +28,6 @@ public class Main {
         familyTree.sortByName();
         System.out.println(familyTree);
 
-        System.out.println("fhjffg");
     }
 }
 
