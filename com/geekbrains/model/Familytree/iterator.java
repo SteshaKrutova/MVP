@@ -1,7 +1,7 @@
-package com.geekbrains.HW_3.FamilyTree;
+package com.geekbrains.model.Familytree;
 
 
-import com.geekbrains.HW_3.human.Human;
+import com.geekbrains.model.human.Human;
 
 import java.util.Iterator;
 import java.util.List;

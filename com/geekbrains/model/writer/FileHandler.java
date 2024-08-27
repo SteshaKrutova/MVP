@@ -1,4 +1,4 @@
-package com.geekbrains.HW_3.writer;
+package com.geekbrains.model.writer;
 
 import java.io.*;
 import java.io.Writer;

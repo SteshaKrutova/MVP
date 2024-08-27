@@ -1,6 +1,6 @@
-package com.geekbrains.HW_3.human;
+package com.geekbrains.model.human;
 
-import com.geekbrains.HW_3.FamilyTree.TreeNode;
+import com.geekbrains.model.Familytree.TreeNode;
 
 import java.io.Serializable;
 import java.time.LocalDate;

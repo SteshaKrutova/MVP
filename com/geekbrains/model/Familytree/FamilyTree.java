@@ -1,8 +1,8 @@
-package com.geekbrains.HW_3.FamilyTree;
+package com.geekbrains.model.Familytree;
 
-import com.geekbrains.HW_3.human.Human;
-import com.geekbrains.HW_3.human.Sort.ComparatorByAge;
-import com.geekbrains.HW_3.human.Sort.ComparatorByName;
+import com.geekbrains.model.human.Human;
+import com.geekbrains.model.human.Sort.ComparatorByAge;
+import com.geekbrains.model.human.Sort.ComparatorByName;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -94,7 +94,20 @@ public class FamilyTree<E extends TreeNode<E>> implements Serializable, Iterable
 
     @Override
     public Iterator<E> iterator() {
-        return null;
+        return new HumanIterator();
+    }
+
+    class HumanIterator implements Iterator<E>{
+        private int curIndex;
+        @Override
+        public boolean hasNext() {
+            return humanList.size()>curIndex;
+        }
+
+        @Override
+        public E next() {
+            return humanList.get(curIndex++);
+        }
     }
 }
 

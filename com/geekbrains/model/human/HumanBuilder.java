@@ -1,4 +1,4 @@
-package com.geekbrains.HW_3.human;
+package com.geekbrains.model.human;
 
 public class HumanBuilder {
     private int genId;

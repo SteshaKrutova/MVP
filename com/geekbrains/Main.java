@@ -1,8 +1,9 @@
-package com.geekbrains.HW_3;
+package com.geekbrains;
 
-import com.geekbrains.HW_3.human.Gender;
-import com.geekbrains.HW_3.human.Human;
-import com.geekbrains.HW_3.FamilyTree.FamilyTree;
+import com.geekbrains.model.Familytree.HumanService;
+import com.geekbrains.model.human.Gender;
+import com.geekbrains.model.human.Human;
+import com.geekbrains.model.Familytree.FamilyTree;
 
 import java.time.LocalDate;
 
@@ -28,6 +29,10 @@ public class Main {
         familyTree.sortByName();
         System.out.println(familyTree);
 
+
+        HumanService humanService = new HumanService();
+
+        humanService.addHuman("таня", 16);
     }
 }
 

@@ -1,7 +1,7 @@
-package com.geekbrains.HW_3.human.Sort;
+package com.geekbrains.model.human.Sort;
 
 
-import com.geekbrains.HW_3.FamilyTree.TreeNode;
+import com.geekbrains.model.Familytree.TreeNode;
 
 import java.util.Comparator;
 

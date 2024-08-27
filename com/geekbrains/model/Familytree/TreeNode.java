@@ -1,4 +1,4 @@
-package com.geekbrains.HW_3.FamilyTree;
+package com.geekbrains.model.Familytree;
 
 import java.io.Serializable;
 import java.time.LocalDate;
